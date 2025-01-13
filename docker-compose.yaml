@@ -6,4 +6,7 @@ services:
     image: unity-webgl-demo
     build: .
     ports:
-      - "8080:80"
+      - "8765:443"
+    volumes:
+      - ./webgl:/usr/share/nginx/html
+      - ./ssl:/etc/nginx/ssl
